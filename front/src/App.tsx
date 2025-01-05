@@ -1,9 +1,16 @@
-function App() {
+import AppSidebar from '@/components/AppSidebar.tsx';
+import {SidebarProvider, SidebarTrigger} from '@/components/ui/sidebar.tsx';
+import {Outlet} from 'react-router';
 
+function App() {
     return (
-        <div className="text-2xl text-indigo-500">
-            Hello World!
-        </div>
+        <SidebarProvider>
+            <AppSidebar />
+            <main>
+                <SidebarTrigger />
+                <Outlet/>
+            </main>
+        </SidebarProvider>
     )
 }
 
