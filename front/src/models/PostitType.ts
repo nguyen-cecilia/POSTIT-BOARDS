@@ -1,4 +1,4 @@
-export interface Postit {
+export interface PostitType {
     id: string;
     board: string;
     title: string;

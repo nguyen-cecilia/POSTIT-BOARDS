@@ -1,6 +1,6 @@
-import {Board} from "./models/Board.ts";
+import {BoardType} from "./models/BoardType.ts";
 
-const data: Board[] = [
+const data: BoardType[] = [
     {
         id: "1",
         title: "Board 1",
@@ -12,15 +12,23 @@ const data: Board[] = [
                 title: "Postit 1",
                 content: "Content",
                 visible: true,
-                color: "black",
+                color: "#FFFDF5",
             },
             {
                 id: "2",
                 board: "1",
                 title: "Postit 2",
-                content: "Content",
+                content: "Du texte",
                 visible: true,
-                color: "pink",
+                color: "#E7F1A8",
+            },
+            {
+                id: "3",
+                board: "1",
+                title: "Postit 3",
+                content: "Du texte",
+                visible: false,
+                color: "#E7F1A8",
             },
         ],
     },
